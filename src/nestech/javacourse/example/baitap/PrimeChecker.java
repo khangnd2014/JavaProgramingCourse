@@ -26,9 +26,16 @@ public class PrimeChecker {
     }
 
     public static boolean isPrime(int n) {
-        boolean isValid = false;
-        // Implement your code here
+        if (n <= 1) {
+            return false;
+        }
 
-        return isValid;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
