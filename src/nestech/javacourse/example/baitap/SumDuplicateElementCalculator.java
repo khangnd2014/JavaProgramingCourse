@@ -18,19 +18,7 @@ public class SumDuplicateElementCalculator {
 
     public static int calculateCommonElementsSum(int[] arr1, int[] arr2) {
         int sum = 0;
-
-        // Duyệt qua từng phần tử của mảng thứ nhất
-        for (int i = 0; i < arr1.length; i++) {
-            // Duyệt qua từng phần tử của mảng thứ hai để so sánh
-            for (int j = 0; j < arr2.length; j++) {
-                // Nếu có số xuất hiện trong cả hai mảng
-                if (arr1[i] == arr2[j]) {
-                    sum += arr1[i];
-                    break; // Đảm bảo chỉ cộng một lần nếu số xuất hiện nhiều lần
-                }
-            }
-        }
-
+        // Implement your code here
         return sum;
     }
 

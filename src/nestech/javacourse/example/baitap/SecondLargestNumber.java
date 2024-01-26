@@ -19,21 +19,8 @@ public class SecondLargestNumber {
     }
 
     public static int findSecondLargest(int[] arr) {
-        if (arr.length < 2) {
-            return Integer.MIN_VALUE; // Trường hợp không có số lớn thứ hai
-        }
-
-        int firstLargest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-
-        for (int num : arr) {
-            if (num > firstLargest) {
-                secondLargest = firstLargest;
-                firstLargest = num;
-            } else if (num > secondLargest && num != firstLargest) {
-                secondLargest = num;
-            }
-        }
+        // Implement your code here
 
         return secondLargest;
     }
