@@ -13,22 +13,27 @@ public class PrimeChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Nhập một số nguyên dương: ");
-        int number = scanner.nextInt();
+       while (true) {
+           System.out.print("Nhập một số nguyên dương: ");
+           int number = scanner.nextInt();
 
-        if (isPrime(number)) {
-            System.out.println(number + " là số nguyên tố.");
-        } else {
-            System.out.println(number + " không phải là số nguyên tố.");
-        }
-
-        scanner.close();
+           if (isPrime(number)) {
+               System.out.println(number + " là số nguyên tố.");
+           } else {
+               System.out.println(number + " không phải là số nguyên tố.");
+           }
+       }
     }
 
     public static boolean isPrime(int n) {
-        boolean isValid = false;
-        // Implement your code here
-
-        return isValid;
+        if(n < 2) {
+             return false;
+        }
+        for (int i=2; i <= n-1; i++) {
+            if(n % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }

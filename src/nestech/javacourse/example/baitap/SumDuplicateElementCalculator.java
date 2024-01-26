@@ -18,7 +18,15 @@ public class SumDuplicateElementCalculator {
 
     public static int calculateCommonElementsSum(int[] arr1, int[] arr2) {
         int sum = 0;
-        // Implement your code here
+
+        for (int num1 : arr1) {
+            for (int num2 : arr2) {
+                if(num1 == num2) {
+                    sum += num1; // hoặc sum = sum + num1 hoặc sum = sum + num2
+                    break;
+                }
+            }
+        }
         return sum;
     }
 
