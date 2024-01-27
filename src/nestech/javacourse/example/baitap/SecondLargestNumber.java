@@ -8,9 +8,7 @@ package nestech.javacourse.example.baitap;
 public class SecondLargestNumber {
     public static void main(String[] args) {
         int[] numbers = {10, 5, 8, 20, 15};
-
         int secondLargest = findSecondLargest(numbers);
-
         if (secondLargest != Integer.MIN_VALUE) {
             System.out.println("Số lớn thứ hai trong mảng là: " + secondLargest);
         } else {
@@ -21,17 +19,17 @@ public class SecondLargestNumber {
     public static int findSecondLargest(int[] arr) {
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-       if (arr.length <2) {
-           return  Integer.MIN_VALUE;
-       }
-       for (int num : arr) {
-           if (num > largest) {
-               secondLargest = largest;
-               largest = num;
-           }else if(num > secondLargest && num != largest) {
+        if (arr.length < 2) {
+            return Integer.MIN_VALUE;
+        }
+        for (int num : arr) {
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
                 secondLargest = num;
-           }
-       }
+            }
+        }
 
         return secondLargest;
     }
