@@ -20,7 +20,20 @@ public class SecondLargestNumber {
 
     public static int findSecondLargest(int[] arr) {
         int secondLargest = Integer.MIN_VALUE;
-        // Implement your code here
+        int largest = Integer.MIN_VALUE; // đảm bảo các giá trị của số nguyên trong mảng sẽ lớn hơn giá trị ban đầu
+
+        if(arr.length < 2){
+            return Integer.MIN_VALUE;
+        }
+
+        for (int num : arr){
+            if(num > largest){
+                secondLargest = largest;
+                largest = num;
+            }else if(num > secondLargest && num != largest){
+                secondLargest = num;
+            }
+        }
 
         return secondLargest;
     }

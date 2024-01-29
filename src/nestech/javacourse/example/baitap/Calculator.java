@@ -11,6 +11,44 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // implement your code here
+        boolean isRunning = true;
+
+        while(isRunning){
+            System.out.println("1. Summation (+) ");
+            System.out.println("2. Subtraction (-) ");
+            System.out.println("3. Multiplication (*)");
+            System.out.println("4. Division (/) ");
+            System.out.println("0. Exit");
+            int choice = scanner.nextInt();
+
+            if(choice != 0){
+                System.out.println("Enter first number: ");
+                double firstNumber = scanner.nextDouble();
+                System.out.println("Enter second number: ");
+                double secondNumber = scanner.nextDouble();
+
+                switch (choice){
+                    case 1:
+                        System.out.println(firstNumber + secondNumber);
+                        break;
+                    case 2:
+                        System.out.println(firstNumber - secondNumber);
+                        break;
+                    case 3:
+                        System.out.println(firstNumber * secondNumber);
+                        break;
+                    case 4:
+                        System.out.println(firstNumber / secondNumber);
+                        break;
+                    default:
+                        System.out.println("The choice is invalid please enter again");
+                }
+
+            }
+            else {
+                System.out.println("Closing application...");
+                isRunning = false;
+            }
+        }
     }
 }
