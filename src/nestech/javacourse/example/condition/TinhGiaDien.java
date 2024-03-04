@@ -1,5 +1,6 @@
 package nestech.javacourse.example.condition;
 
+
 import java.util.Scanner;
 
 /*
