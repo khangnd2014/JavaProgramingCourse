@@ -26,4 +26,8 @@ public class QuanLySinhVien {
             System.out.println("Pass 2");
         }
     }
+    public static void test();
 }
+
+
+//////testlskjfkdlsjfklsdjfklsdjf
