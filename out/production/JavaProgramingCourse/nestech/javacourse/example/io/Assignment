@@ -1,0 +1,33 @@
+Khi chạy chương trình hiển thị menu:
+EMPLOYEE MANAGEMENT
+1. Open file data
+2. Display list of employee
+3. Display First employee
+4. Display Previous employee
+5. Display Next employee
+6. Display Last employee
+7. Input new employee
+8. Delete a employee
+9. Find employee
+10. Save and exit
+                        =================
+Choice: . . .
+• Mục 1: Mở file dữ liệu và đưa các dữ liệu này vào mảng nhân viên
+• Mục 2: Hiển thị ra màn hình tất cả các nhân viên, cuối danh sách có thống kê số lượng
+nhân viên.
+• Mục 3, 4, 5, 6: Hiển thị các nhân viên tương ứng với các vị trí đầu tiên(First), trước
+đó(Previous), tiếp theo(Next), và cuối cùng(Last).
+• Mục 7: Nhập một nhân viên mới vào mảng có kiểm tra dữ liệu trước khi nhập
+• Mục 8: Xóa một nhân viên từ mảng
+• Mục 9: Tìm một nhân viên trong mảng
+• Mục 10: Ghi mảng nhân viên vào file ban đầu và thoát khỏi chương trình.
+Lưu ý: Các thuộc tính của nhân viên và thứ tự các mục trong menu có thể khác ở trên.
+
+Yêu cầu:
+Mở file và nhập thông tin từ file vào mảng
+2. Hiển thị chi tiết các nhân viên hoặc danh sách nhân viên
+3. Hiển thị thứ tự nhân viên hiện tại và tổng số nhân viên
+4. Thêm nhân viên và có kiểm tra dữ liệu phải nhập trước khi lưu
+5. Xóa nhân viên
+6. Tìm nhân viên
+7. Ghi dữ liệu từ mảng vào file và kết thúc chương trình
