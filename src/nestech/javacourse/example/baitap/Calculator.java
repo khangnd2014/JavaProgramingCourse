@@ -24,7 +24,7 @@ public class Calculator {
 			int choice = scanner.nextInt();
 
 			if (choice == 0) {
-				System.out.println("You have exited the calculator.");
+				System.out.println("You have exited the calculatorsssssssssssss.");
 				break;
 			} else if (choice == 1) {
 				System.out.println("<--- Addition --->");
